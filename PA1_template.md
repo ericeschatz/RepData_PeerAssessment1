@@ -140,7 +140,7 @@ wd_mspi <- aggregate(dat3$steps, by = list(interval = dat3$interval, part_of_wee
 
 library(lattice)
 
-xyplot(steps ~ interval| weekend_weekday, data = dat3, type = "l", xlab = "Interval", ylab = "Average Number of steps", layout=c(1,2))
+xyplot(x ~ interval| part_of_week, data = wd_mspi, type = "l", xlab = "Interval", ylab = "Average Number of steps", layout=c(1,2))
 ```
 
 ![plot of chunk question 5.1&5.2](figure/question 5.1&5.2-1.png) 
